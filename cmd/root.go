@@ -7,8 +7,8 @@ import (
 	"charm.land/fang/v2"
 	"github.com/spf13/cobra"
 
-	"github.com/DaanV2/go-tool-template/internal/logging"
-	"github.com/DaanV2/go-tool-template/internal/version"
+	"github.com/DaanV2/go-tool-template/infrastructure/logging"
+	"github.com/DaanV2/go-tool-template/infrastructure/version"
 )
 
 // NewRootCmd builds the root command and all its subcommands.
