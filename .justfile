@@ -3,7 +3,7 @@ set windows-shell := ["pwsh", "-NoLogo", "-NoProfile", "-Command"]
 binary := "go-tool-template"
 version := if os_family() == "windows" { `git describe --tags --always --dirty 2>$null || echo dev` } else { `git describe --tags --always --dirty 2>/dev/null || echo dev` }
 commit := if os_family() == "windows" { `git rev-parse --short HEAD 2>$null || echo ""` } else { `git rev-parse --short HEAD 2>/dev/null || echo ""` }
-ldflags := "-s -w -X github.com/DaanV2/go-tool-template/internal/version.Version=" + version + " -X github.com/DaanV2/go-tool-template/internal/version.Commit=" + commit
+ldflags := "-s -w -X github.com/DaanV2/go-tool-template/infrastructure/version.Version=" + version + " -X github.com/DaanV2/go-tool-template/infrastructure/version.Commit=" + commit
 bin := "bin/" + binary + if os_family() == "windows" { ".exe" } else { "" }
 
 # List available recipes

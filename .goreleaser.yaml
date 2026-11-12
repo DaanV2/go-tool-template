@@ -19,9 +19,9 @@ builds:
     flags: [-trimpath]
     ldflags:
       - -s -w
-      - -X github.com/DaanV2/go-tool-template/internal/version.Version={{ .Version }}
-      - -X github.com/DaanV2/go-tool-template/internal/version.Commit={{ .ShortCommit }}
-      - -X github.com/DaanV2/go-tool-template/internal/version.Date={{ .Date }}
+      - -X github.com/DaanV2/go-tool-template/infrastructure/version.Version={{ .Version }}
+      - -X github.com/DaanV2/go-tool-template/infrastructure/version.Commit={{ .ShortCommit }}
+      - -X github.com/DaanV2/go-tool-template/infrastructure/version.Date={{ .Date }}
     mod_timestamp: "{{ .CommitTimestamp }}"
 
 archives:

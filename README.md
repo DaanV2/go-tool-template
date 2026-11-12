@@ -49,9 +49,8 @@ infrastructure/version/        version info injected via -ldflags
 | `auto-label-pr.yaml`   | PRs                 | Labels PRs from changed files and branch name (`.github/labeler.yml`)                                            |
 | `release-drafter.yaml` | push to `main`      | Keeps a draft release with categorized notes up to date (`.github/release-drafter.yml`)                          |
 | `release-assets.yaml`  | release published   | GoReleaser builds linux/darwin/windows × amd64/arm64 and uploads the archives to that release                    |
-| `codeql.yml`           | push, PRs, weekly   | CodeQL security analysis                                                                                         |
 
-Dependabot updates Go modules (charm packages grouped separately) and GitHub Actions weekly.
+Dependabot updates Go modules (charm packages grouped separately) and GitHub Actions monthly.
 
 ## Release version
 

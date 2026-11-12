@@ -19,7 +19,7 @@ dependencies:
 
 bug:
   - head-branch: ["^bug", "bug"]
-bug:
+chore:
   - head-branch: ["^chore", "chore"]
 feature:
   - head-branch: ["^feature", "feature"]
